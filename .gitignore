@@ -3,3 +3,4 @@
 *.o
 *.swo
 *.a
+.DS_Store
