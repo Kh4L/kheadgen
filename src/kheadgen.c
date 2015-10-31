@@ -7,14 +7,14 @@
  * ----------------------------------------------------------------------------
  */
 
+#ifdef __linux__
+# define _XOPEN_SOURCE 700
+#endif /* !__linux__ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <libgen.h>
-
-#ifndef __APPLE__
-# define _XOPEN_SOURCE 700
-#endif /* !__APPLE__ */
 
 static char *create_def_name(char *name)
 {
