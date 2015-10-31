@@ -7,6 +7,7 @@ RM = rm -rv
 all: $(BIN)
 
 $(BIN): $(OBJS)
+	mkdir -p bin
 	$(CC) $(CFLAGS) $(OBJS) -o $(BIN)
 
 clean:
